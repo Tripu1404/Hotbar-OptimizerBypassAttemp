@@ -15,9 +15,11 @@ public class ServerDatabase {
     }
     public static final List<String> serversThatBlock = new ArrayList<>();
     public static final List<String> serversThatFlag = new ArrayList<>();
+
     public static void init(){
-        serversThatFlag.add("mcpvp.club");
+        // Se ha eliminado la línea que añadía "mcpvp.club"
     }
+
     public static boolean isIn(String server){
         return MinecraftClient.getInstance().getCurrentServerEntry().address.contains(server);
     }
